@@ -1,0 +1,21 @@
+在虚拟机安装的Linux系统中，安装VMware tools工具不仅可将主机中的文件自由拖动到虚拟机中，
+而且鼠标也可以主机系统与虚拟机系统中自由切换，而不需要再按Ctrl+Alt来释放鼠标，真的很方便。网上安装VMware tools的方
+法确实很多，但基本上都是类似的，而有些文档中说的也只能在虚拟机中的windows系统中才可行。而Linux下安装
+首先要在系统中存在VMware Tools文件才可以，网上大多介绍的方法也都是基于这个前提的，就是点“虚拟机——安
+装VMware Tools”，但是我的虚拟机系统中却是什么反应都没有，而手动添加虚拟机安装文件下的windows.iso,也没
+有Linux下的.gz文件。在经过一番思考后自己也算是想出了一个比较笨，但是很实用的方法，在这里分享一下。
+
+首先可以在网上下载一个Linux下的VMware tools工具压缩包（不能是windows.iso），可以到
+http://download.csdn.NET/detail/u010264659/8585353下载，然后下载UltraISO,在这就不介绍UltraISO的用法，将
+下载VMwareTools-9.6.2-1688356.tar.gz制成光盘镜像文件，可以命名为VMware tools.iso,然后在虚拟机的工具条上
+依次点“虚拟机——设置——硬件——CD/DVD”,然后点解使用ISO映像文件，在浏览中找到自己制作的VMware
+Tools.iso文件路径，然后点击确定。如图：
+http://img.blog.csdn.net/20150411213011095?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDI2NDY1OQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center
+
+这时在虚拟机Linux系统中会出现光盘符，里面就是VMware Tools压缩包，如果桌面上没有出现光盘标志，可以点击
+桌面上的computer，然后点击CD-RW/DVD-RAM,就会出现了。如果打开光盘里面的文件名为乱码，可以输入命令
+reboot重启系统，然后就可以正常显示了。此方法也可以用于其他安装软件或文件的拷贝，完成光盘文件的成功加
+载后就可以参照网上Linux下安装WMware Tools的方法进行操作了
+http://jingyan.baidu.com/article/6dad5075ca4d6da123e36e34.html
+
+对于安装过程中出现需要选择的地方，没有提示的按回车，有[yes]的地方，按y回车，有[no]的地方按n回车，一路下去就搞定了。
